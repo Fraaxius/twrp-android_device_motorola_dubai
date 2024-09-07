@@ -17,7 +17,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/twrp_bangkk.mk
+     $(LOCAL_DIR)/twrp_dubai.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_bangkk-eng
+    twrp_dubai-eng

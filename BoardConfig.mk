@@ -4,19 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/motorola/bangkk
+DEVICE_PATH := device/motorola/dubai
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := holi
+TARGET_BOOTLOADER_BOARD_NAME := lahaina
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_HARDWARE_QCOM_BOOTCTRL := true
-QCOM_BOARD_PLATFORMS += holi
-TARGET_BOARD_PLATFORM := holi
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno619
+QCOM_BOARD_PLATFORMS += lahaina
+TARGET_BOARD_PLATFORM := lahaina
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno642L
 TARGET_USES_64_BIT_BINDER := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 BUILD_BROKEN_DUP_RULES := true
@@ -28,14 +28,14 @@ TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := kryo300
+TARGET_CPU_VARIANT_RUNTIME := kryo385
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
+TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Enable CPUSets
 ENABLE_CPUSETS := true
@@ -55,7 +55,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 \
                         msm_rtb.filter=0x237 \
                         service_locator.enable=1 \
                         androidboot.hab.csv=0 \
-                        androidboot.hab.product=bangkk \
+                        androidboot.hab.product=dubai \
                         androidboot.hab.cid=50 \
                         firmware_class.path=/vendor/firmware_mnt/image \
 # For the love of all that is holy, please do not include this in your ROM unless you really want TWRP to not work correctly!
@@ -76,8 +76,8 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 
 #BOARD_KERNEL_SEPARATED_DTBO := true
 #BOARD_INCLUDE_RECOVERY_DTBO := true
-#TARGET_KERNEL_SOURCE := kernel/motorola/bangkk
-#TARGET_KERNEL_CONFIG := vendor/bangkk_defconfig
+#TARGET_KERNEL_SOURCE := kernel/motorola/dubai
+#TARGET_KERNEL_CONFIG := vendor/dubai_defconfig
 
 BOARD_KERNEL_IMAGE_NAME := kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(BOARD_KERNEL_IMAGE_NAME)
@@ -104,7 +104,7 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 246543265792
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := bangkk, bangkk_retcn
+TARGET_OTA_ASSERT_DEVICE := dubai
 
 # Dynamic Partition && Super
 BOARD_SUPER_PARTITION_SIZE := 6710886400
