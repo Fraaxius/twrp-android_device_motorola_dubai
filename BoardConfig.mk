@@ -54,7 +54,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 \
                         video=vfb:640x400,bpp=32,memsize=3072000 \
                         msm_rtb.filter=0x237 \
                         service_locator.enable=1 \
-                        androidboot.hab.csv=0 \
+                        androidboot.hab.csv=24 \
                         androidboot.hab.product=dubai \
                         androidboot.hab.cid=50 \
                         firmware_class.path=/vendor/firmware_mnt/image \
@@ -101,14 +101,14 @@ BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := 4096
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 246543265792
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 116340535296
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := dubai
 
 # Dynamic Partition && Super
-BOARD_SUPER_PARTITION_SIZE := 6710886400
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6706692096 # BOARD_SUPER_PARTITION_SIZE - 4MB
+BOARD_SUPER_PARTITION_SIZE := 8925478912
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 8921284608 # BOARD_SUPER_PARTITION_SIZE - 4MB
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_PARTITION_LIST := product system system_ext vendor
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product system system_ext vendor
